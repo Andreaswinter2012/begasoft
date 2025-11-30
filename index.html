@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>body{font-family: verdana;}
+        .class{font-family: verdana;background-color: yellow;}
+        .code{border-style: solid; border-width: 1px;border-color: rgb(79, 78, 78);    padding: 1em;}
+        .function{font-family: monospace;color: green;}
+        .txt{font-family: monospace;color: red;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine erste Webseite</title>
+</head>
+<body>
+    <h1>meine beitrag über <span class="class">Javascript</span></h1>
+    <p><span class="class">Javascript</span> ist ein wichtiger programmiersprache die funktinoirt in web browser, fast jede web seite benutzt <span class="class">Javascript</span>.
+    <p><span class="class">Javascript</span> gehört zu web entwicklung <span class="class">Javascript</span> ist sprache für html seite und dazu gehört auch CSS das ist style sprache</p>
+    <a href="https://de.wikipedia.org/wiki/JavaScript">weitere info auf wikipedia</a></p>
+    <p>Beispiel für javascript code</p>
+    <img src="js.gif" alt="Javascript Bild" width="500">
+    <br>
+    <pre class="code"><span class="function">function</span> submit(){
+        <span class="function">var</span> <span class="txt">inp</span> = document.getElementById(<span class="txt">"inp"</span>).value
+        <span class="function">document</span>.getElementById(<span class="txt">"out"</span>).innerText = <span class="txt">inp</span>;
+    }</pre>
+    <br>
+    <button onclick="submit()">click</button>
+    <input id="inp">
+    <p id="out"></p>
+    <script>function submit(){
+        var inp = document.getElementById("inp").value
+        document.getElementById("out").innerText = inp;
+    }</script>
+</body>
+</html>
